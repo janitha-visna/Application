@@ -6,25 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class page2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_page2);
     }
-
-    @Override
-    public boolean releaseInstance() {
-        return super.releaseInstance();
-    }
-
-    public void next1(View n){
-        Intent i = new Intent(this, page2.class);
+    public void signup(View n){
+        Intent i = new Intent(this, page3.class);
 
 
         startActivity(i);
     }
 
 }
-//comment 1
